@@ -1,0 +1,136 @@
+name: Feature Request
+description: Suggest a new feature or enhancement to improve functionality, scalability, or user experience.
+title: "[FEATURE] <short description>"
+labels:
+  - feature
+  - enhancement
+  - needs-triage
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Request
+
+        Thank you for contributing to Wolfy Open Source.
+
+        This template is designed to capture structured, production-grade feature proposals that support system scalability, maintainability, and long-term architectural vision.
+
+        Please ensure your proposal is clear, well-structured, and aligned with system design principles.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Provide a concise and clear summary of the proposed feature.
+      placeholder: e.g. Add real-time online status indicator for chat users
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Describe the problem this feature is intended to solve.
+      placeholder: Explain what limitation, inefficiency, or missing capability currently exists.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Business Value
+      description: Explain why this feature is important for users or system improvement.
+      placeholder: Describe the real-world value, engineering benefit, or user impact.
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail.
+      placeholder: Explain how this feature should work and how it solves the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Mention any alternative approaches you considered.
+      placeholder: Describe other possible implementations or workarounds.
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact Assessment
+      description: Describe the expected impact of this feature on the system.
+      placeholder: e.g. Improves latency, enhances scalability, increases user engagement
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope Area
+      description: Which part of the system does this feature affect?
+      options:
+        - Frontend
+        - Backend
+        - API
+        - Database
+        - Authentication
+        - Real-time System
+        - Infrastructure
+        - Full Stack
+    validations:
+      required: false
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Suggested Design / Architecture (Optional)
+      description: Provide technical design ideas, architecture notes, or implementation approach.
+      placeholder: Describe how this feature could be implemented at a system level.
+    validations:
+      required: false
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Provide real-world scenarios where this feature would be useful.
+      placeholder: |
+        1. Users can see online status before starting a chat  
+        2. System reduces unnecessary random matching load  
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have verified that this feature does not already exist
+          required: true
+        - label: I have clearly described the problem and proposed solution
+          required: true
+        - label: I understand this proposal will be reviewed based on system design and feasibility
+          required: true
