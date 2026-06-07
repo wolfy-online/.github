@@ -1,1 +1,1 @@
-
+Wolfy Open Source - A structured open-source engineering ecosystem dedicated to designing, developing, and maintaining scalable, production-grade software systems through modular architecture, rigorous engineering standards, and community-driven collaboration aligned with enterprise-level practices.
