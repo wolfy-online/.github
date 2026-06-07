@@ -1,3 +1,1 @@
-![Wolfy Open Source](https://github.com/wolfy-online/.github/tree/main/images/image.jpeg)
-
-
+![Wolfy Open Source](https://github.com/wolfy-online/.github/blob/main/images/image.jpeg?raw=true)
