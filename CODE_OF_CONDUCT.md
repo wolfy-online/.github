@@ -1,8 +1,8 @@
-## Code of Conduct - wolfy.online Open Source Organization
+## Code of Conduct - Wolfy Open Source
 
 ### 1. Introduction
 
-wolfy.online Open Source is a structured engineering ecosystem dedicated to the design and development of scalable, production-grade systems through modular architecture, disciplined engineering practices, and community-driven collaboration.
+Wolfy Open Source is a structured engineering ecosystem dedicated to the design and development of scalable, production-grade systems through modular architecture, disciplined engineering practices, and community-driven collaboration.
 
 This Code of Conduct defines the expected standards of professional behavior for all contributors, maintainers, and participants across the organization.
 
@@ -47,7 +47,7 @@ The following behaviors are strictly prohibited:
 
 ### 6. Engineering and Contribution Standards
 
-wolfy.online maintains a production-oriented engineering standard:
+Wolfy maintains a production-oriented engineering standard:
 
 - Clean, modular, and maintainable architecture  
 - Consistent coding conventions and naming standards  
@@ -93,6 +93,6 @@ Enforcement is carried out by maintainers in a consistent and impartial manner t
 
 ### 10. Final Statement
 
-wolfy.online Open Source Organization is committed to maintaining a professional, reliable, and engineering-focused ecosystem.
+Wolfy Open Source Organization is committed to maintaining a professional, reliable, and engineering-focused ecosystem.
 
 All contributors are expected to uphold these standards to ensure the long-term stability, scalability, and quality of the platform.
