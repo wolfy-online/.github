@@ -1,0 +1,142 @@
+name: Bug Report
+description: Report a reproducible issue to improve system stability, reliability, and performance.
+title: "[BUG] <short description>"
+labels:
+  - bug
+  - needs-triage
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report
+
+        Thank you for contributing to Wolfy Open Source.
+
+        This template is designed to ensure structured, precise, and reproducible bug reports to support efficient debugging and resolution.
+
+        Please provide complete and accurate information.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: Provide a concise and clear summary of the issue.
+      placeholder: e.g. Real-time chat messages are delayed or not delivered
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Describe the issue in detail, including context, conditions, and observed behavior.
+      placeholder: Explain what is happening, when it happens, and any relevant context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a clear, step-by-step sequence to reproduce the issue.
+      placeholder: |
+        1. Open application  
+        2. Navigate to chat module  
+        3. Send a message  
+        4. Observe incorrect or delayed behavior  
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Describe what should have happened under correct system behavior.
+      placeholder: Messages should be delivered instantly in real-time
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: Describe what is currently happening instead.
+      placeholder: Messages are delayed or fail to appear in real-time
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: Indicate the severity and impact of the issue.
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Reproduction Rate
+      description: How often does this issue occur?
+      options:
+        - Always
+        - Frequently
+        - Sometimes
+        - Rarely
+        - Unable to reproduce
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Impact Area
+      description: Select the system component affected by this issue.
+      options:
+        - Frontend
+        - Backend
+        - API
+        - Database
+        - Authentication
+        - Real-time Communication
+        - Infrastructure
+        - Unknown
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide system, runtime, or browser environment details.
+      placeholder: e.g. Chrome 125, Node.js 20, Ubuntu 22.04
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Attach logs, stack traces, or screenshots if available.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues before reporting this bug
+          required: true
+        - label: I have provided sufficient information to reproduce this issue
+          required: true
+        - label: I understand this report is subject to review by maintainers
+          required: true
