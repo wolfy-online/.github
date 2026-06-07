@@ -1,6 +1,6 @@
-<p align="center">
+<!-- <p align="center">
   <img src="https://github.com/wolfy-online/.github/blob/main/images/image.jpeg?raw=true" width="700" />
-</p>
+</p> -->
 
 ## Wolfy Open Source
 - A structured open-source engineering ecosystem focused on building scalable, real-time social interaction systems using modular architecture, production-grade engineering practices, and community-driven collaboration aligned with modern distributed system standards.
