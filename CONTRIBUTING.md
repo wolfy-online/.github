@@ -1,8 +1,8 @@
-## Contributing to wolfy.online Open Source
+## Contributing to Wolfy Open Source
 
 ### 1. Introduction
 
-wolfy.online Open Source is an engineering-focused ecosystem dedicated to building scalable, production-grade real-time systems using modular architecture and disciplined software engineering practices.
+Wolfy Open Source is an engineering-focused ecosystem dedicated to building scalable, production-grade real-time systems using modular architecture and disciplined software engineering practices.
 
 We welcome contributions that improve system quality, performance, maintainability, and overall architectural integrity.
 
@@ -144,7 +144,7 @@ If your change affects functionality:
   
 ### 12. Review Philosophy
 
-wolfy.online follows a quality-first review process:
+Wolfy follows a quality-first review process:
 - Maintainability over complexity
 - Clarity over cleverness
 - Stability over rapid but unsafe changes
@@ -158,6 +158,6 @@ Contributors who consistently improve the ecosystem may be:
   
 ### 14. Final Note
 
-wolfy.online Open Source Organization values disciplined engineering, structured collaboration, and long-term system stability.
+Wolfy Open Source Organization values disciplined engineering, structured collaboration, and long-term system stability.
 
 Every contribution should reflect a commitment to quality, scalability, and professional software engineering standards.
