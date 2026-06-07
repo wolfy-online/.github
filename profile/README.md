@@ -2,12 +2,12 @@
   <img src="https://github.com/wolfy-online/.github/blob/main/images/image.jpeg?raw=true" width="700" />
 </p> -->
 
-## Wolfy Open Source
+## wolfy.online Open Source
 - A structured open-source engineering ecosystem focused on building scalable, real-time social interaction systems using modular architecture, production-grade engineering practices, and community-driven collaboration aligned with modern distributed system standards.
 
 ## Get Engaged
 
-We welcome developers, designers, and system engineers to contribute to Wolfy.
+We welcome developers, designers, and system engineers to contribute to wolfy.online
 
 - Fork the repositories
 - Build features or fix issues
