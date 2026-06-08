@@ -1,10 +1,12 @@
 name: Welcome Contributors
 
 on:
-  pull_request:
-    types: [opened]
   issues:
-    types: [opened]
+    types:
+      - opened
+  pull_request_target:
+    types:
+      - opened
 
 permissions:
   issues: write
@@ -15,62 +17,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Welcome First-Time Contributors
-        uses: actions/github-script@v7
-        with:
-          script: |
-            try {
-              const username = context.payload.sender.login;
+    - name: Welcome New Contributors
+      uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-              // Ignore bots
-              if (context.payload.sender.type === "Bot") {
-                console.log("Bot detected. Skipping.");
-                return;
-              }
+        issue-message: |
+          ### Welcome to Wolfy Open Source
 
-              // Get all contributions (issues + PRs are both issues in GitHub)
-              const { data: issues } = await github.rest.issues.listForRepo({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                creator: username,
-                state: "all",
-              });
+          Thank you for opening your first issue.
+          We appreciate your interest in contributing to Wolfy.
 
-              const isFirstTime = issues.length === 0;
+          A maintainer will review your issue soon.
 
-              if (!isFirstTime) {
-                console.log("Existing contributor. Skipping welcome message.");
-                return;
-              }
+        pr-message: |
+          ### Welcome to Wolfy Open Source
 
-              const issueNumber =
-                context.payload.issue?.number ||
-                context.payload.pull_request?.number;
+          Thank you for your first contribution.
+          We appreciate your effort in helping improve Wolfy.
 
-              if (!issueNumber) {
-                console.log("No issue/PR number found.");
-                return;
-              }
-
-              const body = `
-### Welcome to Wolfy Open Source
-
-Thank you for your contribution.
-
-We appreciate your effort in contributing to a structured, scalable, and production-grade engineering ecosystem.
-
-A maintainer will review your contribution soon.
-`;
-
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issueNumber,
-                body,
-              });
-
-              console.log("Welcome message sent.");
-
-            } catch (error) {
-              console.log("Workflow error:", error.message);
-            }
+          A maintainer will review your pull request soon.
