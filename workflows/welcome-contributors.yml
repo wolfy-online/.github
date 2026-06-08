@@ -53,13 +53,13 @@ jobs:
               }
 
               const body = `
-## Welcome to Wolfy Open Source
+### Welcome to Wolfy Open Source
 
 Thank you for your contribution.
 
 We appreciate your effort in contributing to a structured, scalable, and production-grade engineering ecosystem.
 
-### Contribution Guidelines
+#### Contribution Guidelines
 - Follow clean and modular code practices
 - Maintain system design consistency
 - Review Code of Conduct:
@@ -68,7 +68,7 @@ https://github.com/wolfy-online/.github/blob/main/CODE_OF_CONDUCT.md
 - Follow PR standards:
 https://github.com/wolfy-online/.github/blob/main/PULL_REQUEST_TEMPLATE.md
 
-### Engineering Philosophy
+#### Engineering Philosophy
 Wolfy is built on:
 - Clean architecture
 - Scalable system design
