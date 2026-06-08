@@ -7,7 +7,7 @@
 
 ## Get Engaged
 
-We [welcome developers](https://github.com/wolfy-online/.github/blob/main/CODE_OF_CONDUCT.md), designers, and system engineers to contribute to wolfy.online
+We [welcome developers, designers, and system engineers](https://github.com/wolfy-online/.github/blob/main/CODE_OF_CONDUCT.md) to contribute to wolfy.online
 
 - Fork the repositories
 - Build features or fix issues
