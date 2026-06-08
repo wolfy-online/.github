@@ -1,0 +1,142 @@
+name: Issue Labeler
+
+on:
+issues:
+types:
+- opened
+- edited
+
+permissions:
+issues: write
+
+jobs:
+label:
+runs-on: ubuntu-latest
+
+steps:
+  - name: Automatically Label Issues
+    uses: actions/github-script@v7
+    with:
+      script: |
+        try {
+          const issue = context.payload.issue;
+          const title = issue.title.toLowerCase();
+          const body = (issue.body || "").toLowerCase();
+
+          // Ignore bots
+          if (context.payload.sender.type === "Bot") {
+            console.log("Bot detected. Skipping.");
+            return;
+          }
+
+          const labels = ["triage"];
+
+          // Issue Type Labels
+          if (
+            title.includes("[bug]") ||
+            body.includes("bug") ||
+            body.includes("error") ||
+            body.includes("crash")
+          ) {
+            labels.push("bug");
+          }
+
+          if (
+            title.includes("[feature]") ||
+            body.includes("feature request") ||
+            body.includes("enhancement")
+          ) {
+            labels.push("enhancement");
+          }
+
+          if (
+            title.includes("[docs]") ||
+            body.includes("documentation") ||
+            body.includes("readme")
+          ) {
+            labels.push("documentation");
+          }
+
+          if (
+            title.includes("[security]") ||
+            body.includes("security") ||
+            body.includes("vulnerability") ||
+            body.includes("cve")
+          ) {
+            labels.push("security");
+          }
+
+          if (
+            body.includes("performance") ||
+            body.includes("optimization") ||
+            body.includes("latency")
+          ) {
+            labels.push("performance");
+          }
+
+          // Area Labels
+          if (
+            body.includes("frontend") ||
+            body.includes("ui") ||
+            body.includes("react") ||
+            body.includes("next.js")
+          ) {
+            labels.push("frontend");
+          }
+
+          if (
+            body.includes("backend") ||
+            body.includes("server") ||
+            body.includes("node.js") ||
+            body.includes("api")
+          ) {
+            labels.push("backend");
+          }
+
+          if (
+            body.includes("database") ||
+            body.includes("mysql") ||
+            body.includes("postgres") ||
+            body.includes("mongodb")
+          ) {
+            labels.push("database");
+          }
+
+          if (
+            body.includes("ci") ||
+            body.includes("cd") ||
+            body.includes("github actions") ||
+            body.includes("infrastructure") ||
+            body.includes("devops")
+          ) {
+            labels.push("infrastructure");
+          }
+
+          // Priority Labels
+          if (
+            body.includes("critical") ||
+            body.includes("urgent")
+          ) {
+            labels.push("priority: high");
+          } else if (
+            body.includes("important")
+          ) {
+            labels.push("priority: medium");
+          } else {
+            labels.push("priority: low");
+          }
+
+          const uniqueLabels = [...new Set(labels)];
+
+          await github.rest.issues.addLabels({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: issue.number,
+            labels: uniqueLabels
+          });
+
+          console.log(`Applied labels: ${uniqueLabels.join(", ")}`);
+
+        } catch (error) {
+          console.log("Workflow failed:", error.message);
+        }
