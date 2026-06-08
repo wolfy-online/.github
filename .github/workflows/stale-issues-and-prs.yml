@@ -1,0 +1,69 @@
+name: Stale Issues and Pull Requests
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    name: Mark and Close Stale Items
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Process Stale Issues and Pull Requests
+      uses: actions/stale@v9
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+        stale-issue-label: stale
+        stale-pr-label: stale
+
+        days-before-issue-stale: 45
+        days-before-issue-close: 14
+
+        days-before-pr-stale: 30
+        days-before-pr-close: 14
+
+        stale-issue-message: |
+          This issue has been automatically marked as stale due to a prolonged period of inactivity.
+
+          If this issue is still relevant, please provide additional context, updates, or activity to keep it open.
+
+          Issues that remain inactive will be automatically closed according to the Wolfy repository maintenance policy.
+
+        close-issue-message: |
+          This issue has been automatically closed due to extended inactivity.
+
+          If the problem persists and remains relevant, a new issue may be opened with updated information and reproduction details.
+
+        stale-pr-message: |
+          This pull request has been marked as stale due to inactivity.
+
+          Please address any outstanding review feedback, resolve conflicts, or provide an update to keep this pull request active.
+
+        close-pr-message: |
+          This pull request has been automatically closed due to extended inactivity.
+
+          Contributors are welcome to reopen or recreate the pull request when development resumes.
+
+        exempt-issue-labels: |
+          security
+          critical
+          pinned
+          roadmap
+          good first issue
+
+        exempt-pr-labels: |
+          security
+          critical
+          work-in-progress
+
+        remove-stale-when-updated: true
+        delete-branch: false
+
+        operations-per-run: 200
