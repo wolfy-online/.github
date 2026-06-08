@@ -7,11 +7,11 @@
 
 ## Get Engaged
 
-We welcome developers, designers, and system engineers to contribute to wolfy.online
+We [welcome developers](https://github.com/wolfy-online/.github/blob/main/CODE_OF_CONDUCT.md), designers, and system engineers to contribute to wolfy.online
 
 - Fork the repositories
 - Build features or fix issues
 - Submit well-documented pull requests
 - Participate in [discussions and architecture planning](https://github.com/orgs/wolfy-online/discussions)
 
-Join us in shaping a scalable, real-time social connectivity platform built on open-source principles.
+Join us in shaping a scalable, real-time social connectivity platform [built on open-source](https://github.com/wolfy-online/.github/blob/main/CONTRIBUTING.md) principles.
