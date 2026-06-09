@@ -93,6 +93,6 @@ Enforcement is carried out by maintainers in a consistent and impartial manner t
 
 ### 10. Final Statement
 
-Wolfy Open Source Organization is committed to maintaining a professional, reliable, and engineering-focused ecosystem.
+Wolfy Open Source is committed to maintaining a professional, reliable, and engineering-focused ecosystem.
 
 All contributors are expected to uphold these standards to ensure the long-term stability, scalability, and quality of the platform.
