@@ -117,6 +117,6 @@ This policy applies to:
 
 ### 12. Final Statement
 
-Security is a foundational pillar of Wolfy Open Source Organization.
+Security is a foundational pillar of Wolfy Open Source.
 
 We appreciate the efforts of security researchers and contributors who help improve the safety and reliability of our ecosystem through responsible disclosure and collaboration.
