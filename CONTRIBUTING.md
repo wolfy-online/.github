@@ -158,6 +158,6 @@ Contributors who consistently improve the ecosystem may be:
   
 ### 14. Final Note
 
-Wolfy Open Source Organization values disciplined engineering, structured collaboration, and long-term system stability.
+Wolfy Open Source values disciplined engineering, structured collaboration, and long-term system stability.
 
 Every contribution should reflect a commitment to quality, scalability, and professional software engineering standards.
