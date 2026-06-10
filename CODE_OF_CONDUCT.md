@@ -8,7 +8,7 @@ This Code of Conduct defines the expected standards of professional behavior for
 
 ### 2. Scope
 
-This Code of Conduct applies to all activity within wolfy.online Open Source Organization, including but not limited to:
+This Code of Conduct applies to all activity within Wolfy Open Source, including but not limited to:
 
 - Source code repositories  
 - Issues, pull requests, and code reviews  
