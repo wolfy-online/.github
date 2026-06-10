@@ -8,9 +8,9 @@ contact_links:
     about: Official documentation, architecture overview, and project information for the Wolfy ecosystem.
 
   - name: Security Policy
-    url: https://github.com/wolfy-online/wolfy/blob/main/SECURITY.md
+    url: https://github.com/wolfy-online/.github/security/policy
     about: Report security vulnerabilities responsibly and privately.
 
   - name: Community Discussions
-    url: https://github.com/wolfy-online/discussions
+    url: https://github.com/orgs/wolfy-online/discussions
     about: Participate in architectural discussions, feature proposals, and system design conversations.
