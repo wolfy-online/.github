@@ -4,11 +4,11 @@ blank_issues_enabled: false
 
 contact_links:
   - name: Wolfy Open Source Documentation
-    url: https://wolfy.online
+    url: https://wolfy.online/document
     about: Official documentation, architecture overview, and project information for the Wolfy ecosystem.
 
   - name: Security Policy
-    url: https://github.com/wolfy-online/.github/blob/main/SECURITY.md
+    url: https://github.com/wolfy-online/wolfy/blob/main/SECURITY.md
     about: Report security vulnerabilities responsibly and privately.
 
   - name: Community Discussions
